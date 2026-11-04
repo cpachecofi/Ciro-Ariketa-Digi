@@ -1,0 +1,383 @@
+/* ==========================================================
+   Motorflex — estilos
+   ========================================================== */
+
+@font-face {
+  font-family: "Hemi Head 426";
+  src: url("../fonts/motorpassion.ttf") format("truetype");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #808080;
+  color: #fff;
+  font-family: "Hemi Head 426", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ---------- Goiburua (header) ---------- */
+.goiburua {
+  height: 96px;
+  background: #494949;
+  display: grid;
+  grid-template-columns: 17.23% 1fr;
+  align-items: center;
+}
+
+.logoa {
+  display: block;
+  padding-left: 24px;
+  margin-top: -1px;
+}
+
+.logoa img {
+  height: 87px;
+  width: auto;
+}
+
+.goiburua ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 2.6% 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.goiburua nav a {
+  font-size: 25.6px;
+  position: relative;
+  top: -2px;
+  color: #fff;
+}
+
+/* ---------- Orria (aside + edukia) ---------- */
+.orria {
+  display: flex;
+  min-height: 490px;
+}
+
+.alboa {
+  flex: none;
+  width: 211px;
+  padding: 0 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.kutxa {
+  background: #d3d3d3;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 6px 8px;
+  color: #000;
+}
+
+.kutxa h3 {
+  margin: 0;
+  position: relative;
+  top: 1.5px;
+  white-space: nowrap;
+  font-size: 18.8px;
+  font-weight: bold;
+  line-height: 19px;
+  color: #000;
+}
+
+.kutxa form {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 14px;
+}
+
+.kutxa label {
+  display: block;
+}
+
+.kutxa input {
+  display: block;
+  width: 129px;
+  height: 16px;
+  margin: 4px 0 2px 4px;
+  padding: 1px 2px;
+  font-size: 10.9px;
+  font-weight: normal;
+}
+
+.kutxa label:nth-of-type(2) {
+  margin-top: 2px;
+}
+
+.kutxa label:nth-of-type(2) + input {
+  margin-top: 2px;
+}
+
+.kutxa button {
+  display: block;
+  width: 61px;
+  height: 18px;
+  margin-top: 1px;
+  padding: 0;
+  font-size: 10.9px;
+  font-weight: normal;
+}
+
+.kutxa ol {
+  margin: 3px 0 1px;
+  padding-left: 33px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.kutxa ol a {
+  color: #fff;
+}
+
+.sareak {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4px 0 9px;
+}
+
+.sareak a {
+  width: 15.5%;
+}
+
+.sareak img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Edukia: hasiera ---------- */
+.edukia {
+  flex: 1;
+  padding: 0 2.55%;
+  text-align: center;
+}
+
+.edukia h1 {
+  margin: 22px 0 0;
+  line-height: 1;
+  font-size: 51.2px;
+  font-weight: normal;
+}
+
+.edukia h2 {
+  margin: 0;
+  font-size: 25.3px;
+  font-weight: normal;
+}
+
+.edukia p {
+  margin: 25px 0 0;
+  font-size: 19.2px;
+  line-height: 19px;
+  text-align: justify;
+}
+
+/* ---------- Edukia: kontaktua ---------- */
+.kontaktua h1 {
+  margin: 30px 0 0;
+  line-height: 1;
+  font-size: 51.2px;
+  font-weight: normal;
+}
+
+.kontaktua address {
+  font-style: normal;
+  font-size: 19.3px;
+  line-height: 19px;
+  margin-top: 1px;
+}
+
+.kontaktua {
+  padding-bottom: 11px;
+}
+
+.kontaktua iframe {
+  display: block;
+  border: 0;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* ---------- Edukia: produktuak (motorrak / kotxeak) ---------- */
+.sareta {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 28.1%);
+  column-gap: 3.17%;
+  align-content: start;
+  padding: 26px 0 26px 2%;
+  row-gap: 49px;
+}
+
+.txartela {
+  height: 195px;
+  background: #b9b9b9;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.txartela img {
+  width: 78%;
+  height: 100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 5px 5px 4px #000;
+}
+
+.txartela p {
+  margin: 7px 0 0;
+  font-size: 15.4px;
+  line-height: 15px;
+  font-weight: bold;
+}
+
+/* ---------- Oina (footer) ---------- */
+.oina {
+  color: #000;
+  text-align: center;
+  padding: 38px 0 60px;
+}
+
+.oina ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 93.2%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15.4px;
+}
+
+.oina p {
+  margin: 37px 0 0;
+  font-size: 12px;
+}
+
+/* ==========================================================
+   Móvil / tableta estrecha (diseño apilado)
+   ========================================================== */
+@media (max-width: 800px) {
+  .goiburua {
+    display: block;
+    height: auto;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+
+  .logoa {
+    padding: 2px 0 0;
+    margin: 0;
+  }
+
+  .logoa img {
+    height: 49px;
+    margin: 0 auto;
+  }
+
+  .goiburua ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .goiburua nav a {
+    display: block;
+    top: 0;
+    line-height: 50.5px;
+  }
+
+  .orria {
+    display: block;
+    min-height: 0;
+  }
+
+  .alboa {
+    width: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .kutxa {
+    margin: 8px;
+  }
+
+  .kutxa input {
+    width: calc(100% - 8px);
+    margin-bottom: 14px;
+  }
+
+  .kutxa button {
+    width: 100%;
+    height: 17px;
+    margin-top: 7px;
+  }
+
+  .sareak {
+    margin: 16px 0 12px;
+  }
+
+  .sareak a {
+    width: 15%;
+  }
+
+  .edukia {
+    padding: 0 25px;
+  }
+
+  .kontaktua {
+    padding: 0 8px;
+  }
+
+  .sareta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .txartela {
+    width: 80%;
+    height: auto;
+    margin: 4px 0;
+    padding-bottom: 7px;
+  }
+
+  .oina {
+    padding-top: 38px;
+  }
+
+  .oina ul {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    line-height: 15.5px;
+  }
+}
